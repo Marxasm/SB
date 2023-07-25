@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+  .container {
+    max-width: 1310px;
+    background: white;
+  height: auto;
+  margin: auto;
+  border: 3px solid green;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+  border-left: 0 solid #00ff99;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+  border: 1px solid;
+     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+      content: "";
+  display: table;
+  clear: both;
+  }
+
+
+
+
+.content {
+  background-image: url("../img/background2.jpg");
+
+  /* Full height */
+ background-size: 100% 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.item i {
+  padding-right:10px;
+}
+
+.item{
+  padding-left: 20px;
+   color: black;
+}
+
+} 
+
+.bgimg {
+  background-image: url(../img/counsil.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  padding: 0px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  height: 300px;
+}
+
+.hr {
+	background-image:url("../img/minscat1.jpg");
+	text-align: center;
+	font-family: "Orelega One", sans-serif;
+	font-size: 40px;
+	width: 100%;
+	height: 30%;
+	background-size: cover;
+	background-attachment: fixed;
+	position: relative;
+	overflow: hidden;
+}
+.hr .overlay{
+	width: 100%;
+	height: 100%;
+	padding: 200px;
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient( 135deg, #6eab3f6b 10%, #6eab3f6b 100%);
+    margin: auto;
+}
+
+.header {
+  padding: 20px;
+  background:  linear-gradient(to right, #008000 , #00b300);
+  color: white;
+  font-size: 30px;
+   border-style: solid;
+  border-width: thin;
+  border-color: black;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.responsive1 {
+  width: 3%;
+  height: auto;
+  position: absolute;
+}
+
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #003300;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.quotes {
+
+  width: 20vw;
+  min-height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.quotes .box {
+  position: absolute;
+  bottom: -1px;
+  left: 0px;
+  min-height: 200px;
+  background: #2D3538;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px;
+  box-shadow: -10px 25px 50px rgba(0, 0, 0, 0.3);
+}
+ 
+.quotes .box::before {
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  width: 100%;
+  height: 100%;
+  font-size: 120px;
+  opacity: 0.2;
+  background: transparent;
+  pointer-events: none;
+}
+
+.quotes .box::after {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  font-size: 120px;
+  opacity: 0.2;
+  background: transparent;
+  filter: invert(1);
+  pointer-events: none;
+}
+
+.quotes .box p {
+  font-family: "Orelega One", sans-serif;
+  margin: 0;
+  padding: 10px;
+  font-size: 4rem;
+}
+
+.quotes .box h2 {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  bottom: 10%;
+  right: 10%;
+  font-size: 1.5rem;
+}
+
+.quotes .box:hover {
+  color: #f2f2f2;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.5);
+}
+
+.quotes .bg {
+  background-image:url("../img/minscatlogo.png");
+  background-repeat: no-repeat, repeat;
+  background-size: 10%;
+  background-position: center;
+ /* background-color: #009900;*/
+  position: absolute;
+  top: -80%;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.5s ease-in;
+  pointer-events: none;
+  width: 100%;
+  height: 200%;
+  overflow: hidden;
+}
+
+.quotes .box.box1:hover { 
+
+
+  opacity: 1;
+  background: #003300;
+background: -moz-linear-gradient(-45deg,#000000 15%, #166d3b 100%);
+background: -webkit-linear-gradient(-45deg, #000000 15%, #166d3b 100%);
+background: linear-gradient(135deg, #000000 15%, #166d3b 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003300', endColorstr='#003300',GradientType=1 );
+}
+.quotes .box.box1:hover~.bg {
+ opacity: 1;
+
+}
+
+.announcement {
+  font-family: "Orelega One", sans-serif;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: green;
+}
+
+.announcement1 {
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  font-style: bold;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.announcement2 {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  text-decoration: none;
+  color: black;
+   text-align: justify;
+  text-justify: inter-word;
+}
+
+.announcement3 {
+  font-family: "Arial", sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  text-decoration: none;
+  color: black;
+   text-align: center;
+}
+
+
+
+.bodycenter {
+  margin: auto;
+  width: 70%;
+  background-color: white;
+}
+
+.post {
+  padding: 1rem;
+  width: 420px;
+  box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+    0 5px 15px 0 rgba(0,0,0,0.08);
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  
+  border-left: 0 solid #00ff99;
+  transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+}
+
+.post:hover {
+  padding-left: 0.5rem;
+  border-left: 0.5rem solid #00ff99;
+}
+
+.post > :first-child {
+  margin-top: 0;
+}
+
+.post > :last-child {
+  margin-bottom: 0;
+}
+
+.announcepost {
+  background-image: url(../img/post.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  padding: 200px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  height: 500px;
+}
+
+.announcepost1 {
+  background-image: url(../img/post.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+  padding: 200px;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  height: 500px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.appointment {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.login{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+
+

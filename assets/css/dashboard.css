@@ -1,0 +1,367 @@
+
+.dropdown-btn {
+      color:#fff;
+    display:block;
+    width:100%;
+    line-height:60px;
+    text-decoration:none;
+    box-sizing:border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.dropdown-btn:hover ,:focus,:active{
+     text-decoration: none;
+    color: black;
+}
+.dropdown-container {
+  display: none;
+  padding-left: 8px;
+}
+
+.dropdown-container a:hover , a:focus, a:active{
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+body {
+    margin:0;
+    padding:0;
+    font-family:"Roboto", sans-serif;
+}
+.inputstyle{
+      max-width: 3000px;
+  height: auto;
+  margin: auto;
+}
+
+.editstyle{
+      max-width: 2000px;
+     margin-right: 40px;
+    margin-left: 40px;
+}
+
+.item a {
+   text-decoration: none;
+}
+.item a:hover{
+    text-decoration: none;
+}
+
+.item{
+   color: black;
+}
+
+.actionbutton{
+      padding: 8px;
+      max-width: 3000px;
+      height: auto;
+      margin: auto;
+      display: block;
+    justify-content: center;
+    align-items:center;
+}
+
+.actionbutton:hover{
+    transition: 0.5s;
+
+}
+
+#students td, #students th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#students tr:nth-child(even){background-color: #f2f2f2;}
+
+#students tr:hover {background-color: #ddd;}
+
+#students th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.head {
+    z-index: 1;
+    position: fixed;
+    background: #144525;
+    padding: 10px;
+    width: calc(100% - 0%);
+    top:0;
+    height: 70px;
+}
+
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: 900;
+    margin-bottom: 150px;
+}
+
+.left_area span{
+    color: #71b087;
+}
+
+.logout_btn{
+    padding:5px;
+     background: #144525;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight:600;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: background;
+
+}
+
+.logout_btn:hover, a:focus, a:active  {
+   background: #71b087;
+     text-decoration: none;
+     color: inherit;
+}
+
+.logo_info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.sidebar{
+    z-index: 1;
+    top:0;
+    background: #315c40;
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left:0;
+    width:250px;
+    height:calc(100% - 1%);
+     transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+
+.sidebar .logo_info .logo_image{
+    width:100px;
+    height:100px;
+    border-radius:100px;
+    margin-bottom:10px;
+}
+
+
+.sidebar .logo_info h4{
+    color: #fff;
+    margin-top:0;
+    margin-bottom:20px;
+}
+
+.sidebar a{
+    color:#fff;
+    display:block;
+    width:100%;
+    line-height:60px;
+    text-decoration:none;
+    padding-left:40px;
+    box-sizing:border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+
+.sidebar a:hover , a:focus, a:active{
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+}
+
+.sidebar i{
+    padding-right: 10px;
+
+}
+
+label #sidebar_btn{
+    z-index: 1;
+    color:#fff;
+    position:fixed;
+    cursor:pointer;
+    left:500px;
+    font-size:20px;
+    margin:5px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+label #sidebar_btn:hover{
+     color: #71b087;
+}
+
+#check:checked ~ .sidebar{
+    left:-185px;
+}
+
+#check:checked ~ .sidebar a span{
+    display:none;
+}
+
+#check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 165px;
+    width:100%;
+
+}
+
+.content{
+    width:(100%-250px);
+    margin-top:60px;
+    padding:20px;
+    margin-left:250px;
+    background: #fff;
+    background-position:center;
+    background-size:cover;
+    height: 150vh;
+    transition: 0.5s;
+}
+
+.content h4{
+   font-weight: 900;
+   font-size: 19px;
+   color:green;
+  border-radius: 5px;
+  border-bottom: 5px solid green;
+}
+
+.content .card {
+  /* Add shadows to create the "card" effect */
+  border-radius: 5px;
+   border-bottom: 5px solid green;
+
+}
+
+
+
+#check:checked ~ .sidebar .logo_info{
+    display:none;
+}
+
+#check{
+    display:none;
+}
+
+.mobile_nav{
+    display:none;
+}
+
+
+
+/* On mouse-over, add a deeper shadow */
+
+
+@media screen and  (max-width: 780px){
+    .sidebar{
+        display:none;
+    }
+
+    #sidebar_btn{
+        display:none;
+    }
+
+    .content{
+        margin-left:0;
+        margin-top:0;
+        padding: 10px 20px;
+        transition: 0s;
+    }
+
+    #check:checked~ .content{
+        margin-left:0;
+    }
+
+    .mobile_nav{
+        display:block;
+        width:calc(100% - 0%);
+    }
+
+    .nav_bar{
+        background:#222;
+        width: (100%-0%);
+        margin-top:70px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:10px 20px;
+    }
+
+    .nav_bar .mobile_logo_image{
+        width:50px;
+        height:50px;
+        border-radius:50%;
+    }
+
+    .nav_bar .nav_btn{
+        color: #fff;
+        font-size:22px;
+        cursor: pointer; 
+        transition:0.5s;
+        transition-property:color;
+    }
+
+    .nav_bar .nav_btn:hover{
+        color: #71b087;
+    }
+
+    .mobile_nav_items{
+       background: #315c40;
+       display:none;
+       transition:0.5s;
+    }
+
+    .mobile_nav_items a{
+        color: #fff;
+        display:block;
+        text-align:center;
+        letter-spacing: 1px;
+        line-height:60px;
+        text-decoration: none;
+        box-sizing:border-box;
+        transition:0.5s;
+        transition-property: background;
+    }
+
+     .mobile_nav_items a:hover{
+         background: #246e3e;
+     }
+
+     .mobile_nav_items i{
+        padding-right:10px;
+     }
+
+     .active{
+        display:block;
+     }
+
+
+.responsive-table {
+  width: 100%;
+  margin-bottom: 1.5em;
+  border-spacing: 0;
+  
+  @media (min-width: $bp-bart) {
+    font-size: .9em; 
+  }
+  
+  @media (min-width: $bp-marge) {
+    font-size: 1em; 
+  }
+  
+  
+}
